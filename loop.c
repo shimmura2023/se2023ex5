@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 int main(void) {
-  int i = 0;
-  while (i <= 20) {
+  for (int i = 0; i <= 30; i++) {
     printf("%d\n", i);
-    i++;
   }
   printf("end");
   return 0;
