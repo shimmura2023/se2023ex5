@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-  char a[] = {'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '\0'};
-  printf("%s", a);
+  char a[] = "hello world";
+  for (int i = 0; i < sizeof(a); i++) {
+    printf("%s", a[i]);
+  }
   return 0;
 }
